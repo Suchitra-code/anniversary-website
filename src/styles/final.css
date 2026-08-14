@@ -1,0 +1,538 @@
+
+/* =========================
+   FINAL PAGE
+========================= */
+
+.final-page {
+  min-height: calc(100vh - 70px);
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 70px 20px;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      #421319 0%,
+      #22070b 42%,
+      #090103 100%
+    );
+
+  color: #f4d98a;
+}
+
+
+/* =========================
+   GOLD GLOW
+========================= */
+
+.final-page::before {
+  content: "";
+
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(211, 166, 64, 0.12),
+      transparent 70%
+    );
+
+  top: 5%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.final-content {
+  position: relative;
+
+  z-index: 5;
+
+  width: min(850px, 95vw);
+}
+
+
+/* =========================
+   SMALL TITLE
+========================= */
+
+.final-small-title {
+  margin: 0 0 15px;
+
+  font-size: 12px;
+
+  letter-spacing: 5px;
+
+  color: #c9a653;
+
+  font-weight: 500;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.final-content h1 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(42px, 7vw, 78px);
+
+  font-weight: 500;
+
+  color: #f3d98b;
+
+  text-shadow:
+    0 0 20px rgba(221, 178, 74, 0.25);
+}
+
+
+.final-content h2 {
+  margin: 8px 0 0;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(27px, 4vw, 43px);
+
+  font-weight: 400;
+
+  font-style: italic;
+
+  color: #fff0c4;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.final-divider {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+
+  margin: 28px 0;
+}
+
+.final-divider div {
+  width: 80px;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      #cda84e,
+      transparent
+    );
+}
+
+.final-divider span {
+  color: #d7b55d;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   PHOTO
+========================= */
+
+.final-photo-frame {
+  width: min(430px, 85vw);
+
+  margin: 15px auto 28px;
+
+  padding: 9px;
+
+  position: relative;
+
+  background:
+    linear-gradient(
+      135deg,
+      #765016,
+      #e1bb5b,
+      #8c641d,
+      #e6c56d
+    );
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.65),
+    0 0 35px rgba(205, 166, 74, 0.15);
+}
+
+
+.final-photo-inner {
+  background: #160306;
+
+  padding: 5px;
+}
+
+
+.final-photo-inner img {
+  width: 100%;
+
+  height: 300px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =========================
+   PHOTO CORNERS
+========================= */
+
+.photo-corner {
+  position: absolute;
+
+  width: 25px;
+  height: 25px;
+
+  border-color: #f0d17d;
+
+  border-style: solid;
+
+  z-index: 3;
+}
+
+.top-left {
+  top: -5px;
+  left: -5px;
+
+  border-width: 3px 0 0 3px;
+}
+
+.top-right {
+  top: -5px;
+  right: -5px;
+
+  border-width: 3px 3px 0 0;
+}
+
+.bottom-left {
+  bottom: -5px;
+  left: -5px;
+
+  border-width: 0 0 3px 3px;
+}
+
+.bottom-right {
+  bottom: -5px;
+  right: -5px;
+
+  border-width: 0 3px 3px 0;
+}
+
+
+/* =========================
+   DATE
+========================= */
+
+.final-date {
+  margin-top: 15px;
+
+  font-size: 13px;
+
+  color: #d8b65e;
+
+  font-weight: 500;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.final-message {
+  max-width: 650px;
+
+  margin: 25px auto 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 17px;
+
+  line-height: 1.9;
+
+  color: #d8c8a5;
+}
+
+
+.final-love-message {
+  margin-top: 22px;
+
+  font-family: Georgia, serif;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: #bcae91;
+}
+
+.final-love-message strong {
+  color: #e2c36d;
+
+  font-size: 19px;
+}
+
+
+/* =========================
+   FOREVER
+========================= */
+
+.forever-text {
+  margin-top: 28px;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(30px, 5vw, 45px);
+
+  font-style: italic;
+
+  color: #f0d487;
+
+  text-shadow:
+    0 0 18px rgba(224, 180, 67, 0.25);
+}
+
+.forever-text span {
+  display: inline-block;
+
+  margin-left: 10px;
+
+  font-size: 25px;
+
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+}
+
+
+/* =========================
+   SIGNATURE
+========================= */
+
+.daughters-signature {
+  margin-top: 20px;
+
+  font-family: Georgia, serif;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  color: #a99a7b;
+}
+
+.daughters-signature strong {
+  color: #d9b967;
+
+  font-size: 17px;
+}
+
+
+/* =========================
+   REPLAY BUTTON
+========================= */
+
+.replay-btn {
+  margin-top: 30px;
+
+  padding: 13px 30px;
+
+  border-radius: 30px;
+
+  border: 1px solid #d4ad50;
+
+  background:
+    linear-gradient(
+      135deg,
+      #d8b158,
+      #91681f
+    );
+
+  color: #25070a;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.final-hearts span {
+  position: absolute;
+
+  bottom: -40px;
+
+  color: rgba(221, 177, 71, 0.25);
+
+  font-size: 20px;
+
+  animation: floatHeart 10s linear infinite;
+}
+
+.final-hearts span:nth-child(1) {
+  left: 8%;
+  animation-delay: 0s;
+}
+
+.final-hearts span:nth-child(2) {
+  left: 23%;
+  animation-delay: 3s;
+}
+
+.final-hearts span:nth-child(3) {
+  left: 42%;
+  animation-delay: 6s;
+}
+
+.final-hearts span:nth-child(4) {
+  left: 62%;
+  animation-delay: 2s;
+}
+
+.final-hearts span:nth-child(5) {
+  left: 78%;
+  animation-delay: 5s;
+}
+
+.final-hearts span:nth-child(6) {
+  left: 92%;
+  animation-delay: 8s;
+}
+
+@keyframes floatHeart {
+
+  0% {
+    transform:
+      translateY(0)
+      rotate(0deg);
+
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform:
+      translateY(-110vh)
+      rotate(360deg);
+
+    opacity: 0;
+  }
+}
+
+
+/* =========================
+   BOTTOM GLOW
+========================= */
+
+.final-bottom-glow {
+  position: absolute;
+
+  bottom: -150px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 700px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(185, 139, 43, 0.16),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .final-page {
+    padding: 50px 15px;
+  }
+
+  .final-small-title {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+  }
+
+  .final-photo-inner img {
+    height: 230px;
+  }
+
+  .final-message {
+    font-size: 15px;
+  }
+
+  .final-content h1 {
+    font-size: 42px;
+  }
+
+  .final-content h2 {
+    font-size: 27px;
+  }
+}
+

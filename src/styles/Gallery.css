@@ -1,0 +1,731 @@
+/* ========================= */
+/* RESET */
+/* ========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body,
+#root{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    font-family:Georgia, serif;
+    background:#120202;
+}
+
+
+/* ========================= */
+/* MAIN GALLERY PAGE */
+/* ========================= */
+
+.gallery-page{
+
+    width:100%;
+    height:100vh;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(212,175,55,.12),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at top,
+            #5b0b15 0%,
+            #250202 45%,
+            #090101 100%
+        );
+
+}
+
+
+/* ========================= */
+/* CINEMATIC GLOW */
+/* ========================= */
+
+.gallery-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+    height:600px;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,215,0,.08),
+            transparent 70%
+        );
+
+    filter:blur(30px);
+
+    pointer-events:none;
+
+}
+
+
+/* ========================= */
+/* OUR MEMORIES INTRO */
+/* ========================= */
+
+.memories-intro{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:20;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(212,175,55,.13),
+            transparent 45%
+        ),
+        #120202;
+
+}
+
+
+/* GOLD LINE */
+
+.intro-line{
+
+    width:220px;
+
+    height:2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #FFD700,
+            transparent
+        );
+
+    box-shadow:
+        0 0 10px rgba(255,215,0,.6);
+
+    margin:18px;
+}
+
+
+/* INTRO TITLE */
+
+.memories-intro h1{
+
+    color:#FFD700;
+
+    font-size:70px;
+
+    letter-spacing:9px;
+
+    font-family:Georgia,serif;
+
+    text-shadow:
+        0 0 10px gold,
+        0 0 30px rgba(255,215,0,.7),
+        0 0 60px rgba(255,215,0,.3);
+
+}
+
+
+/* INTRO MAIN TEXT */
+
+.memories-intro p{
+
+    color:#ffe8a5;
+
+    font-size:24px;
+
+    letter-spacing:5px;
+
+    margin:12px 0;
+
+}
+
+
+/* INTRO HEART */
+
+.intro-heart{
+
+    font-size:48px;
+
+    margin:18px;
+
+    filter:
+        drop-shadow(0 0 10px gold)
+        drop-shadow(0 0 25px rgba(255,215,0,.6));
+
+}
+
+
+/* INTRO SUBTITLE */
+
+.intro-subtitle{
+
+    font-size:17px !important;
+
+    letter-spacing:5px !important;
+
+    opacity:.8;
+
+}
+
+
+/* ========================= */
+/* CINEMATIC GALLERY */
+/* ========================= */
+
+.cinematic-gallery{
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+
+/* ========================= */
+/* GALLERY HEADER */
+/* ========================= */
+
+.gallery-header{
+
+    text-align:center;
+
+    margin-bottom:8px;
+
+}
+
+
+.gallery-header h1{
+
+    color:#f7d774;
+
+    font-size:42px;
+
+    letter-spacing:3px;
+
+    text-shadow:
+        0 0 8px #ffd700,
+        0 0 20px rgba(255,215,0,.5),
+        0 0 40px rgba(212,175,55,.3);
+
+}
+
+
+.gallery-header p{
+
+    color:#ffe8a5;
+
+    font-size:18px;
+
+    letter-spacing:3px;
+
+    margin-top:8px;
+
+}
+
+
+/* ========================= */
+/* SECTION TITLE */
+/* ========================= */
+
+.cinematic-gallery > h2{
+
+    color:#FFD700;
+
+    font-size:28px;
+
+    letter-spacing:3px;
+
+    margin:8px 0 8px;
+
+    text-shadow:
+        0 0 10px rgba(255,215,0,.6);
+
+}
+
+
+/* ========================= */
+/* LARGE CINEMATIC FRAME */
+/* ========================= */
+
+.cinematic-frame{
+
+    width:780px;
+
+    height:480px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+    margin:15px auto;
+
+    padding:10px;
+
+    border:2px solid #d4af37;
+
+    border-radius:18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #2b0909,
+            #160303
+        );
+
+    box-shadow:
+        0 0 25px rgba(255,215,0,.35),
+        0 0 70px rgba(255,215,0,.15),
+        inset 0 0 25px rgba(0,0,0,.7);
+
+    overflow:hidden;
+
+}
+
+
+/* ========================= */
+/* INNER GOLD FRAME */
+/* ========================= */
+
+.cinematic-frame::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:7px;
+
+    border:1px solid rgba(255,215,0,.35);
+
+    border-radius:12px;
+
+    pointer-events:none;
+
+    z-index:2;
+
+}
+
+
+/* ========================= */
+/* PHOTO */
+/* ========================= */
+
+.cinematic-frame img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    border-radius:10px;
+
+    display:block;
+
+    transition:
+        transform .6s ease,
+        filter .6s ease;
+
+}
+
+
+/* ========================= */
+/* PHOTO HOVER */
+/* ========================= */
+
+.cinematic-frame:hover img{
+
+    transform:scale(1.02);
+
+    filter:
+        brightness(1.05)
+        contrast(1.03);
+
+}
+
+
+/* ========================= */
+/* PHOTO COUNTER */
+/* ========================= */
+
+.photo-counter{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:5px;
+
+    font-size:22px;
+
+    color:#FFD700;
+
+    letter-spacing:3px;
+
+    text-shadow:
+        0 0 10px gold;
+
+}
+
+
+.counter-line{
+
+    color:#8d6d1d;
+
+    font-size:20px;
+
+}
+
+
+/* ========================= */
+/* MEMORY TEXT */
+/* ========================= */
+
+.memory-text{
+
+    color:#f5ead5;
+
+    font-size:17px;
+
+    letter-spacing:2px;
+
+    margin-top:8px;
+
+    text-align:center;
+
+}
+
+
+/* ========================= */
+/* PHOTO DOTS */
+/* ========================= */
+
+.photo-dots{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:9px;
+
+    margin-top:10px;
+
+}
+
+
+.dot{
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:#6b4d13;
+
+    border:1px solid #b89532;
+
+    transition:
+        .4s ease;
+
+}
+
+
+.dot.active{
+
+    width:25px;
+
+    border-radius:10px;
+
+    background:#FFD700;
+
+    box-shadow:
+        0 0 8px gold,
+        0 0 18px rgba(255,215,0,.6);
+
+}
+
+
+/* ========================= */
+/* FLOATING GOLD PARTICLES */
+/* ========================= */
+
+.gallery-page::after{
+
+    content:"✦";
+
+    position:absolute;
+
+    top:12%;
+
+    left:15%;
+
+    color:#FFD700;
+
+    font-size:20px;
+
+    opacity:.7;
+
+    text-shadow:
+        0 0 10px gold;
+
+    animation:
+        sparkleFloat 4s infinite ease-in-out;
+
+}
+
+
+@keyframes sparkleFloat{
+
+    0%{
+
+        transform:
+            translateY(0)
+            scale(.8);
+
+        opacity:.3;
+
+    }
+
+    50%{
+
+        transform:
+            translateY(-25px)
+            scale(1.2);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:
+            translateY(0)
+            scale(.8);
+
+        opacity:.3;
+
+    }
+
+}
+
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:1000px){
+
+    .cinematic-frame{
+
+        width:80%;
+
+        height:55vh;
+
+    }
+
+    .gallery-header h1{
+
+        font-size:36px;
+
+    }
+
+    .memories-intro h1{
+
+        font-size:55px;
+
+    }
+
+}
+
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media(max-width:700px){
+
+    .cinematic-frame{
+
+        width:92%;
+
+        height:48vh;
+
+    }
+
+    .gallery-header h1{
+
+        font-size:30px;
+
+    }
+
+    .gallery-header p{
+
+        font-size:14px;
+
+    }
+
+    .cinematic-gallery > h2{
+
+        font-size:22px;
+
+    }
+
+    .memory-text{
+
+        font-size:14px;
+
+    }
+
+    .memories-intro h1{
+
+        font-size:45px;
+
+        letter-spacing:5px;
+
+    }
+
+    .memories-intro p{
+
+        font-size:18px;
+
+    }
+
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:500px){
+
+    .cinematic-frame{
+
+        width:94%;
+
+        height:42vh;
+
+        padding:7px;
+
+    }
+
+    .gallery-header h1{
+
+        font-size:25px;
+
+    }
+
+    .gallery-header p{
+
+        font-size:12px;
+
+        letter-spacing:1px;
+
+    }
+
+    .cinematic-gallery > h2{
+
+        font-size:19px;
+
+    }
+
+    .photo-counter{
+
+        font-size:18px;
+
+    }
+
+    .memory-text{
+
+        font-size:12px;
+
+    }
+
+    .memories-intro h1{
+
+        font-size:36px;
+
+        letter-spacing:4px;
+
+    }
+
+    .memories-intro p{
+
+        font-size:16px;
+
+        letter-spacing:3px;
+
+    }
+
+    .intro-heart{
+
+        font-size:40px;
+
+    }
+
+    .intro-line{
+
+        width:150px;
+
+    }
+
+}

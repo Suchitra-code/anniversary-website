@@ -1,0 +1,38 @@
+.parents-cards{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    margin-top:40px;
+}
+
+
+.parent-img{
+    width:300px;
+    height:400px;
+    object-fit:cover;
+
+    border-radius:25px;
+    border:4px solid gold;
+    box-shadow:0 0 30px gold;
+
+    transition:0.4s;
+}
+
+
+.parent-img:hover{
+    transform:scale(1.05);
+}
+
+
+@media(max-width:900px){
+
+    .parents-cards{
+        flex-direction:column;
+    }
+
+    .parent-img{
+        width:90%;
+    }
+
+}
