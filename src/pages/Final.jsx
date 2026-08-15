@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import "../styles/Final.css";
+import "../styles/final.css";
 
 function Final() {
   const navigate = useNavigate();
